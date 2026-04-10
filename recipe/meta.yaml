@@ -1,5 +1,5 @@
 {% set name = "rpextractsink" %}
-{% set version = "6.8.1" %}
+{% set version = "6.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/rpExtractSink/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 9266de01073674bf6189f97c0247ffde918c440bcca6ad0be3b4693daf0cb331
+  sha256: abdeb50641d68bdeff1eed648354bdc40123bb6d55c8246b579bcfe2d3742110
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
 
 test:
   requires:
-      - python {{ python_min }}
+    - python {{ python_min }}
   imports:
     - rpextractsink
   commands:
